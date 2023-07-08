@@ -131,7 +131,7 @@
       <section anchor="cose-algorithms-registrations" title="COSE Header Parameter Registrations">
         <t>
 	  This section registers the following value in the
-	  IANA "COSE Header Parameters" registry <xref target="IANA.COSE.HeaderParameters"/>. 
+	  IANA "COSE Header Parameters" registry <xref target="IANA.COSE.HeaderParameters"/>.
 	</t>
 	<t>
 	  <?rfc subcompact="yes"?>
