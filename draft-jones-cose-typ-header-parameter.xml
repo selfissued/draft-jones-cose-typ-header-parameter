@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='http://xml2rfc.tools.ietf.org/authoring/rfc2629.xslt' ?>
+<!DOCTYPE rfc PUBLIC "-//IETF//DTD RFC 2629//EN" "http://xml2rfc.tools.ietf.org/authoring/rfc2629.dtd">
+
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude"
+  category="std" ipr="trust200902"
+  docName="draft-jones-cose-typ-header-parameter-latest">
+
+  <?rfc toc="yes"?>
+  <?rfc tocompact="yes"?>
+  <?rfc tocdepth="5"?>
+  <?rfc tocindent="yes"?>
+  <?rfc symrefs="yes"?>
+  <?rfc sortrefs="yes"?>
+  <?rfc compact="yes"?>
+  <?rfc subcompact="no"?>
+
+  <front>
+
+    <title>COSE "typ" (type) Header Parameter</title>
+
+    <author fullname="Michael B. Jones" initials="M.B." surname="Jones">
+      <organization>independent</organization>
+      <address>
+	<email>michael_b_jones@hotmail.com</email>
+	<uri>https://self-issued.info/</uri>
+      </address>
+    </author>
+
+    <author fullname="Orie Steele" initials="O." surname="Steele">
+      <organization>Transmute</organization>
+      <address>
+	<email>orie@transmute.industries</email>
+      </address>
+    </author>
+
+    <date day="8" month="July" year="2023" />
+
+    <area>Security</area>
+    <workgroup>COSE Working Group</workgroup>
+
+    <keyword>Explicit Typing</keyword>
+    <keyword>Internet-Draft</keyword>
+
+    <abstract>
+      <t>
+	This specification adds the equivalent of the JOSE <spanx style="verb">typ</spanx> (type) header parameter to COSE
+	so that the benefits of explicit typing,
+	as defined in the JSON Web Token Best Current Practices BCP,
+	can be brought to COSE objects.
+	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter.
+      </t>
+    </abstract>
+
+  </front>
+
+  <middle>
+
+    <section anchor="Introduction" title="Introduction">
+      <t>
+	CBOR Object Signing and Encryption (COSE) <xref target="RFC9052"/> defines header parameters
+	that parallel many of those defined by the JSON Object Signing and Encryption (JOSE)
+	<xref target="RFC7515"/> <xref target="RFC7516"/> specifications.
+	However, one way in which COSE does not provide equivalent functionality to JOSE is that
+	it does not define an equivalent of the <spanx style="verb">typ</spanx> (type) header parameter,
+	which is used for declaring the type of the entire JOSE data structure.
+	The security benefits of having <spanx style="verb">typ</spanx> (type) are described in
+	the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
+	which recommends its use for "explicit typing" --
+	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of objects.
+      </t>
+      <t>
+	This specification adds the equivalent of the JOSE <spanx style="verb">typ</spanx> (type) header parameter to COSE
+	so that the benefits of explicit typing
+	can be brought to COSE objects.
+	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
+	allowing both integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> values
+	and string Media Type <xref target="IANA.MediaTypes"/> values to be used.
+      </t>
+
+      <section anchor="rnc" title="Requirements Notation and Conventions">
+        <t>
+	  The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+	  "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+	  "OPTIONAL" in this document are to be interpreted as described in
+	  BCP 14 <xref target="RFC2119"/> <xref target="RFC8174"/> when, and
+	  only when, they appear in all capitals, as shown here.
+	</t>
+      </section>
+    </section>
+
+    <section anchor="typ" title='COSE "typ" (type) header parameter'>
+      <t>
+	The <spanx style="verb">typ</spanx> (type) header parameter
+	is used by COSE applications to declare the
+	type of this complete COSE object.
+	This is intended for use by the application when
+	more than one kind of object could be present in
+	an application data structure that can contain a COSE object;
+	the application can use this value to disambiguate among
+	the different kinds of objects that might be present.
+	It will typically not be used by applications when
+	the kind of object is already known.
+	This parameter is ignored by COSE implementations;
+	any processing of this parameter is performed by the COSE application.
+	Use of this header parameter is OPTIONAL.
+      </t>
+      <t>
+	The syntax of this header parameter value is the same as the content type header parameter
+	defined in Section 3.1 of <xref target="RFC9052"/>;
+	it can either be an integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
+	or a string Media Type <xref target="IANA.MediaTypes"/> value.
+      </t>
+    </section>
+
+    <section anchor="Security" title="Security Considerations">
+      <t>
+	The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
+	in JSON Web Token Best Current Practices <xref target="RFC8725"/>;
+	explicit typing can prevent confusion between different kinds of objects.
+      </t>
+      <t>
+	COSE applications employing explicit typing should reject COSE objects
+	with a type header parameter value different than values that they expect in that application context.
+	They should also reject COSE objects without a type header parameter when one is expected.
+      </t>
+    </section>
+
+    <section anchor="IANA" title="IANA Considerations">
+
+      <section anchor="cose-algorithms-registrations" title="COSE Header Parameter Registrations">
+        <t>
+	  This section registers the following value in the
+	  IANA "COSE Header Parameters" registry <xref target="IANA.COSE.HeaderParameters"/>. 
+	</t>
+	<t>
+	  <?rfc subcompact="yes"?>
+	  <list style='symbols'>
+	    <t>
+	      Name: typ (type)
+	    </t>
+	    <t>
+	      Label: TBD (requested assignment 14)
+	    </t>
+	    <t>
+	      Value Type: uint / tstr
+	    </t>
+	    <t>
+	      Value Registry: <xref target="IANA.CoAP.ContentFormats"/> or <xref target="IANA.MediaTypes"/>
+	    </t>
+	    <t>
+	      Description: Type of the complete COSE object
+	    </t>
+	    <t>
+	      Reference: <xref target="typ"/> of this specification
+	    </t>
+	  </list>
+	</t>
+	<?rfc subcompact="no"?>
+      </section>
+
+    </section>
+
+  </middle>
+
+  <back>
+
+    <references title="Normative References">
+
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7515.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7516.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8174.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8725.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9052.xml"/>
+
+    </references>
+
+    <references title="Informative References">
+
+      <reference anchor="IANA.COSE.HeaderParameters" target="https://www.iana.org/assignments/cose/cose.xhtml#header-parameters">
+        <front>
+          <title>COSE Header Parameters</title>
+          <author>
+            <organization>IANA</organization>
+          </author>
+	  <date/>
+        </front>
+      </reference>
+
+      <reference anchor="IANA.CoAP.ContentFormats" target="https://www.iana.org/assignments/core-parameters/core-parameters.xhtml#content-formats">
+        <front>
+          <title>CoAP Content-Formats</title>
+          <author>
+            <organization>IANA</organization>
+          </author>
+	  <date/>
+        </front>
+      </reference>
+
+      <reference anchor="IANA.MediaTypes" target="https://www.iana.org/assignments/media-types">
+	<front>
+	  <title>Media Types</title>
+	  <author>
+	    <organization>IANA</organization>
+	  </author>
+	  <date></date>
+	</front>
+      </reference>
+
+    </references>
+
+    <section title="Document History" anchor="History">
+      <t>
+        [[ to be removed by the RFC Editor before publication as an RFC ]]
+      </t>
+
+      <t>
+        -00
+        <list style='symbols'>
+          <t>
+	    Initial version.
+          </t>
+        </list>
+      </t>
+
+    </section>
+
+    <section title="Acknowledgements" anchor="Acknowledgements" numbered="no">
+      <t>
+	TBD
+      </t>
+    </section>
+
+  </back>
+
+</rfc>
