@@ -111,6 +111,13 @@
 	it can either be an integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
 	or a string Media Type <xref target="IANA.MediaTypes"/> value.
       </t>
+      <t>
+  The <spanx style="verb">typ</spanx> parameter MUST NOT be present in unprotected headers. 
+      </t>
+      <t>
+  The <spanx style="verb">typ</spanx> parameter does not describe the content of unprotected headers.
+  Changes to unprotected headers do not change the type of the COSE object.
+      </t>
     </section>
 
     <section anchor="Security" title="Security Considerations">
