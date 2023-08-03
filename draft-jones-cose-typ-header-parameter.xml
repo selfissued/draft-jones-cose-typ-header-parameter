@@ -223,6 +223,18 @@
       </t>
 
       <t>
+        -01
+        <list style='symbols'>
+          <t>
+	    Restricted use to the protected header.
+          </t>
+          <t>
+	    Commented on interpretation when protected header changes.
+          </t>
+        </list>
+      </t>
+
+      <t>
         -00
         <list style='symbols'>
           <t>
