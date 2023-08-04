@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="8" month="July" year="2023" />
+    <date day="4" month="August" year="2023" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -112,7 +112,7 @@
 	or a string Media Type <xref target="IANA.MediaTypes"/> value.
       </t>
       <t>
-  The <spanx style="verb">typ</spanx> parameter MUST NOT be present in unprotected headers. 
+  The <spanx style="verb">typ</spanx> parameter MUST NOT be present in unprotected headers.
       </t>
       <t>
   The <spanx style="verb">typ</spanx> parameter does not describe the content of unprotected headers.
