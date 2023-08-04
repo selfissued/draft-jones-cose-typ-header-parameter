@@ -229,7 +229,7 @@
 	    Restricted use to the protected header.
           </t>
           <t>
-	    Commented on interpretation when protected header changes.
+	    Commented on interpretation when unprotected header changes.
           </t>
         </list>
       </t>
