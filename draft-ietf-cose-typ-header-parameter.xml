@@ -4,7 +4,7 @@
 
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude"
   category="std" ipr="trust200902"
-  docName="draft-jones-cose-typ-header-parameter-latest">
+  docName="draft-ietf-cose-typ-header-parameter-latest">
 
   <?rfc toc="yes"?>
   <?rfc tocompact="yes"?>
@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="4" month="August" year="2023" />
+    <date day="5" month="September" year="2023" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -223,22 +223,10 @@
       </t>
 
       <t>
-        -01
-        <list style='symbols'>
-          <t>
-	    Restricted use to the protected header.
-          </t>
-          <t>
-	    Commented on interpretation when unprotected header changes.
-          </t>
-        </list>
-      </t>
-
-      <t>
         -00
         <list style='symbols'>
           <t>
-	    Initial version.
+	    Initial working group version based on draft-jones-cose-typ-header-parameter-01.
           </t>
         </list>
       </t>
