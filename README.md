@@ -2,16 +2,16 @@
 
 This is the working area for the individual Internet-Draft, "COSE "typ" (type) Header Parameter".
 
-* [Editor's Copy](https://selfissued.github.io/draft-jones-cose-typ-header-parameter/#go.draft-jones-cose-typ-header-parameter.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-jones-cose-typ-header-parameter)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-jones-cose-typ-header-parameter)
-* [Compare Editor's Copy to Individual Draft](https://selfissued.github.io/draft-jones-cose-typ-header-parameter/#go.draft-jones-cose-typ-header-parameter.diff)
+* [Editor's Copy](https://selfissued.github.io/draft-ietf-cose-typ-header-parameter/#go.draft-ietf-cose-typ-header-parameter.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-cose-typ-header-parameter)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-ietf-cose-typ-header-parameter)
+* [Compare Editor's Copy to Individual Draft](https://selfissued.github.io/draft-ietf-cose-typ-header-parameter/#go.draft-ietf-cose-typ-header-parameter.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/selfissued/draft-jones-cose-typ-header-parameter/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
