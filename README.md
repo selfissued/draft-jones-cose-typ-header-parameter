@@ -1,6 +1,6 @@
 # COSE "typ" (type) Header Parameter
 
-This is the working area for the individual Internet-Draft, "COSE "typ" (type) Header Parameter".
+This is the working area for the COSE working group Internet-Draft, "COSE "typ" (type) Header Parameter".
 
 * [Editor's Copy](https://selfissued.github.io/draft-ietf-cose-typ-header-parameter/#go.draft-ietf-cose-typ-header-parameter.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-cose-typ-header-parameter)
