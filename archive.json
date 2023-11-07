@@ -1,0 +1,217 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-11-07T01:10:48.509436+00:00",
+  "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOJ5VX785rH2o_",
+      "title": "Document overlap with draft-fossati-cose-profiles",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/issues/1",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- https://datatracker.ietf.org/doc/draft-fossati-cose-profiles/\r\n- https://mailarchive.ietf.org/arch/msg/cose/glsp0NIQVHi-9jMEz2-SVVmERiE/",
+      "createdAt": "2023-07-10T17:35:21Z",
+      "updatedAt": "2023-07-10T17:35:21Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOJ5VX785XB1r-",
+      "title": "Add comments on unprotected headers",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/2",
+      "state": "MERGED",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "See the thread here for context: https://mailarchive.ietf.org/arch/msg/cose/ybyJoZB_WbCx0RX7OM_auyc73-k/",
+      "createdAt": "2023-08-02T16:32:30Z",
+      "updatedAt": "2023-08-04T20:58:20Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "3d79df025cfbcf00e78dff5c38cefece27b991ac",
+      "headRepository": "OR13/draft-jones-cose-typ-header-parameter",
+      "headRefName": "feat/feedback-from-ietf-117",
+      "headRefOid": "65798276fb0b8d7548037ecdc11d3268c462874d",
+      "closedAt": "2023-08-04T20:58:20Z",
+      "mergedAt": "2023-08-04T20:58:20Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "9c3c3c94e74146280642b522905e633f33f18c11"
+      },
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@selfissued please double check I got the format correct.",
+          "createdAt": "2023-08-03T17:51:36Z",
+          "updatedAt": "2023-08-03T17:51:36Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785c888a",
+          "commit": {
+            "abbreviatedOid": "20ad0e7"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "Please add a history comment for -01 saying that this change was made.",
+          "createdAt": "2023-08-02T17:05:27Z",
+          "updatedAt": "2023-08-02T17:05:27Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOJ5VX785dMczW",
+          "commit": {
+            "abbreviatedOid": "6579827"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-08-04T20:50:04Z",
+          "updatedAt": "2023-08-04T20:50:04Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOJ5VX785XO1Hw",
+      "title": "Spelling mistake",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/3",
+      "state": "MERGED",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-08-04T22:00:39Z",
+      "updatedAt": "2023-08-04T22:02:00Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "a15a9e1922e731d4c711a51a170d129d0a755fcb",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "fix/history-comment",
+      "headRefOid": "19dbfb410b912d1829f8b03c7636e6ff2ce7b942",
+      "closedAt": "2023-08-04T22:01:59Z",
+      "mergedAt": "2023-08-04T22:01:59Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "f5130f0212e1087788a950c4da719c006ab2bdd1"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785dMr5d",
+          "commit": {
+            "abbreviatedOid": "19dbfb4"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-08-04T22:01:32Z",
+          "updatedAt": "2023-08-04T22:01:32Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOJ5VX785eqsQW",
+      "title": "Added language about media type parameters",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/4",
+      "state": "OPEN",
+      "author": "selfissued",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Applied suggestions by Carsten Bormann.",
+      "createdAt": "2023-11-06T10:00:58Z",
+      "updatedAt": "2023-11-06T11:36:17Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "4b7805781acb47bda1ae86ee2e1746235e985631",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "mbj-media-type-parameters",
+      "headRefOid": "ef84f4ac6a14eb54f5b272189983d4bb00fe84b9",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785mN45z",
+          "commit": {
+            "abbreviatedOid": "ef84f4a"
+          },
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-11-06T11:36:17Z",
+          "updatedAt": "2023-11-06T11:36:17Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
