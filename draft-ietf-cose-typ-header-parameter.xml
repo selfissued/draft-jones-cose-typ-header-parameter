@@ -20,7 +20,7 @@
     <title>COSE "typ" (type) Header Parameter</title>
 
     <author fullname="Michael B. Jones" initials="M.B." surname="Jones">
-      <organization>independent</organization>
+      <organization>Self-Issued Consulting</organization>
       <address>
 	<email>michael_b_jones@hotmail.com</email>
 	<uri>https://self-issued.info/</uri>
@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="5" month="September" year="2023" />
+    <date day="6" month="November" year="2023" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -108,8 +108,11 @@
       <t>
 	The syntax of this header parameter value is the same as the content type header parameter
 	defined in Section 3.1 of <xref target="RFC9052"/>;
-	it can either be an integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
-	or a string Media Type <xref target="IANA.MediaTypes"/> value.
+	it is either
+	an integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
+	or a string Content Type value.
+	Content Type values have a Media Type name <xref target="IANA.MediaTypes"/>
+	and MAY include Media Type parameters.
       </t>
       <t>
   The <spanx style="verb">typ</spanx> parameter MUST NOT be present in unprotected headers.
@@ -223,6 +226,15 @@
       </t>
 
       <t>
+        -01
+        <list style='symbols'>
+          <t>
+	    Added language about media type parameters.
+          </t>
+        </list>
+      </t>
+
+      <t>
         -00
         <list style='symbols'>
           <t>
@@ -235,7 +247,9 @@
 
     <section title="Acknowledgements" anchor="Acknowledgements" numbered="no">
       <t>
-	TBD
+	We would like to thank
+	Carsten Bormann
+	for his valuable contributions to this specification.
       </t>
     </section>
 
