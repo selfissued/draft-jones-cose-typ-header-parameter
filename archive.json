@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-07T01:10:48.509436+00:00",
+  "timestamp": "2023-11-09T01:10:48.456653+00:00",
   "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
   "labels": [
     {
@@ -178,24 +178,26 @@
       "id": "PR_kwDOJ5VX785eqsQW",
       "title": "Added language about media type parameters",
       "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "selfissued",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "Applied suggestions by Carsten Bormann.",
       "createdAt": "2023-11-06T10:00:58Z",
-      "updatedAt": "2023-11-06T11:36:17Z",
+      "updatedAt": "2023-11-07T09:23:38Z",
       "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "baseRefName": "main",
       "baseRefOid": "4b7805781acb47bda1ae86ee2e1746235e985631",
       "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "headRefName": "mbj-media-type-parameters",
       "headRefOid": "ef84f4ac6a14eb54f5b272189983d4bb00fe84b9",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-11-07T09:23:38Z",
+      "mergedAt": "2023-11-07T09:23:38Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "e8f9f99560f6de810f9482f9070fea3c6c403069"
+      },
       "comments": [],
       "reviews": [
         {
