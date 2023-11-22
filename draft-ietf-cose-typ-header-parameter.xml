@@ -74,7 +74,7 @@
 	so that the benefits of explicit typing
 	can be brought to COSE objects.
 	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
-	allowing both integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> values
+	allowing both unsigned integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> values
 	and string Media Type <xref target="IANA.MediaTypes"/> values to be used.
       </t>
 
@@ -109,7 +109,7 @@
 	The syntax of this header parameter value is the same as the content type header parameter
 	defined in Section 3.1 of <xref target="RFC9052"/>;
 	it is either
-	an integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
+	an unsigned integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> value
 	or a string Content Type value.
 	Content Type values have a Media Type name <xref target="IANA.MediaTypes"/>
 	and MAY include Media Type parameters.
@@ -150,7 +150,7 @@
 	      Name: typ (type)
 	    </t>
 	    <t>
-	      Label: TBD (requested assignment 14)
+	      Label: TBD (requested assignment 16)
 	    </t>
 	    <t>
 	      Value Type: uint / tstr
