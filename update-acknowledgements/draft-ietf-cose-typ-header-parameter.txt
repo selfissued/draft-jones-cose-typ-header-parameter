@@ -209,8 +209,8 @@ Appendix A.  Document History
 
 Acknowledgements
 
-   We would like to thank Carsten Bormann, and Marco Tiloca, for their
-   valuable contributions to this specification.
+   We would like to thank Henk Birkholz, Carsten Bormann, and Marco
+   Tiloca, for their valuable contributions to this specification.
 
 Authors' Addresses
 
