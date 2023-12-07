@@ -67,7 +67,7 @@
 	The security benefits of having <spanx style="verb">typ</spanx> (type) are described in
 	the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
 	which recommends its use for "explicit typing" --
-	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of objects.
+	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of JWTs.
       </t>
       <t>
 	This specification adds the equivalent of the JOSE <spanx style="verb">typ</spanx> (type) header parameter to COSE
@@ -76,6 +76,7 @@
 	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
 	allowing both integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> values
 	and string Media Type <xref target="IANA.MediaTypes"/> values to be used.
+	The term "COSE object" is used in the same manner as in <xref target="RFC9052"/>.
       </t>
 
       <section anchor="rnc" title="Requirements Notation and Conventions">
@@ -95,12 +96,12 @@
 	is used by COSE applications to declare the
 	type of this complete COSE object.
 	This is intended for use by the application when
-	more than one kind of object could be present in
+	more than one kind of COSE object could be present in
 	an application data structure that can contain a COSE object;
 	the application can use this value to disambiguate among
-	the different kinds of objects that might be present.
+	the different kinds of COSE objects that might be present.
 	It will typically not be used by applications when
-	the kind of object is already known.
+	the kind of COSE object is already known.
 	This parameter is ignored by COSE implementations;
 	any processing of this parameter is performed by the COSE application.
 	Use of this header parameter is OPTIONAL.
@@ -127,7 +128,7 @@
       <t>
 	The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
 	in JSON Web Token Best Current Practices <xref target="RFC8725"/>;
-	explicit typing can prevent confusion between different kinds of objects.
+	explicit typing can prevent confusion between different kinds of COSE objects.
       </t>
       <t>
 	COSE applications employing explicit typing should reject COSE objects
