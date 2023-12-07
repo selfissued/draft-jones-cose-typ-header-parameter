@@ -85,8 +85,11 @@ Table of Contents
    parameter value is the same as the existing COSE content type header
    parameter, allowing both integer CoAP Content-Formats
    [IANA.CoAP.ContentFormats] values and string Media Type
-   [IANA.MediaTypes] values to be used.  The term "COSE object" is used
-   in the same manner as in [RFC9052].
+   [IANA.MediaTypes] values to be used.
+
+   The term "COSE object" is used in the same manner as in [RFC9052].
+   An example of a COSE object is a COSE_Sign1 structure, as described
+   in Section 4.2 of [RFC9052].
 
 1.1.  Requirements Notation and Conventions
 
