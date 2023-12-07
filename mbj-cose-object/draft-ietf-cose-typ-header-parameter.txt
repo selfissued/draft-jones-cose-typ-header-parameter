@@ -77,7 +77,7 @@ Table of Contents
    the entire JOSE data structure.  The security benefits of having typ
    (type) are described in the JSON Web Token Best Current Practices
    [RFC8725], which recommends its use for "explicit typing" -- using
-   typ values to distinguish between different kinds of objects.
+   typ values to distinguish between different kinds of JWTs.
 
    This specification adds the equivalent of the JOSE typ (type) header
    parameter to COSE so that the benefits of explicit typing can be
@@ -85,7 +85,8 @@ Table of Contents
    parameter value is the same as the existing COSE content type header
    parameter, allowing both integer CoAP Content-Formats
    [IANA.CoAP.ContentFormats] values and string Media Type
-   [IANA.MediaTypes] values to be used.
+   [IANA.MediaTypes] values to be used.  The term "COSE object" is used
+   in the same manner as in [RFC9052].
 
 1.1.  Requirements Notation and Conventions
 
@@ -99,14 +100,14 @@ Table of Contents
 
    The typ (type) header parameter is used by COSE applications to
    declare the type of this complete COSE object.  This is intended for
-   use by the application when more than one kind of object could be
-   present in an application data structure that can contain a COSE
+   use by the application when more than one kind of COSE object could
+   be present in an application data structure that can contain a COSE
    object; the application can use this value to disambiguate among the
-   different kinds of objects that might be present.  It will typically
-   not be used by applications when the kind of object is already known.
-   This parameter is ignored by COSE implementations; any processing of
-   this parameter is performed by the COSE application.  Use of this
-   header parameter is OPTIONAL.
+   different kinds of COSE objects that might be present.  It will
+   typically not be used by applications when the kind of COSE object is
+   already known.  This parameter is ignored by COSE implementations;
+   any processing of this parameter is performed by the COSE
+   application.  Use of this header parameter is OPTIONAL.
 
    The syntax of this header parameter value is the same as the content
    type header parameter defined in Section 3.1 of [RFC9052]; it is
@@ -126,7 +127,7 @@ Table of Contents
    The case for explicit typing of COSE objects is equivalent to the
    case made for explicit typing in JSON Web Token Best Current
    Practices [RFC8725]; explicit typing can prevent confusion between
-   different kinds of objects.
+   different kinds of COSE objects.
 
    COSE applications employing explicit typing should reject COSE
    objects with a type header parameter value different than values that

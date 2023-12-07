@@ -28,13 +28,13 @@
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 3.11.0
+    platformdirs 4.1.0
     pycountry 22.3.5
     PyYAML 6.0
     requests 2.31.0
     setuptools 67.7.2
     six 1.16.0
-    wcwidth 0.2.9
+    wcwidth 0.2.12
 -->
 <link href="draft-ietf-cose-typ-header-parameter.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1188,14 +1188,15 @@ svg :is([fill="white"], [fill^="#fff"]) {
  The security benefits of having <code>typ</code> (type) are described in
  the JSON Web Token Best Current Practices <span>[<a href="#RFC8725" class="cite xref">RFC8725</a>]</span>,
  which recommends its use for "explicit typing" --
- using <code>typ</code> values to distinguish between different kinds of objects.<a href="#section-1-1" class="pilcrow">¶</a></p>
+ using <code>typ</code> values to distinguish between different kinds of JWTs.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">
  This specification adds the equivalent of the JOSE <code>typ</code> (type) header parameter to COSE
  so that the benefits of explicit typing
  can be brought to COSE objects.
  The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
  allowing both integer CoAP Content-Formats <span>[<a href="#IANA.CoAP.ContentFormats" class="cite xref">IANA.CoAP.ContentFormats</a>]</span> values
- and string Media Type <span>[<a href="#IANA.MediaTypes" class="cite xref">IANA.MediaTypes</a>]</span> values to be used.<a href="#section-1-2" class="pilcrow">¶</a></p>
+ and string Media Type <span>[<a href="#IANA.MediaTypes" class="cite xref">IANA.MediaTypes</a>]</span> values to be used.
+ The term "COSE object" is used in the same manner as in <span>[<a href="#RFC9052" class="cite xref">RFC9052</a>]</span>.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <div id="rnc">
 <section id="section-1.1">
         <h3 id="name-requirements-notation-and-c">
@@ -1221,12 +1222,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
  is used by COSE applications to declare the
  type of this complete COSE object.
  This is intended for use by the application when
- more than one kind of object could be present in
+ more than one kind of COSE object could be present in
  an application data structure that can contain a COSE object;
  the application can use this value to disambiguate among
- the different kinds of objects that might be present.
+ the different kinds of COSE objects that might be present.
  It will typically not be used by applications when
- the kind of object is already known.
+ the kind of COSE object is already known.
  This parameter is ignored by COSE implementations;
  any processing of this parameter is performed by the COSE application.
  Use of this header parameter is OPTIONAL.<a href="#section-2-1" class="pilcrow">¶</a></p>
@@ -1253,7 +1254,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-3-1">
  The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
  in JSON Web Token Best Current Practices <span>[<a href="#RFC8725" class="cite xref">RFC8725</a>]</span>;
- explicit typing can prevent confusion between different kinds of objects.<a href="#section-3-1" class="pilcrow">¶</a></p>
+ explicit typing can prevent confusion between different kinds of COSE objects.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <p id="section-3-2">
  COSE applications employing explicit typing should reject COSE objects
  with a type header parameter value different than values that they expect in that application context.
