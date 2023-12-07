@@ -76,7 +76,11 @@
 	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
 	allowing both integer CoAP Content-Formats <xref target="IANA.CoAP.ContentFormats"/> values
 	and string Media Type <xref target="IANA.MediaTypes"/> values to be used.
+      </t>
+      <t>
 	The term "COSE object" is used in the same manner as in <xref target="RFC9052"/>.
+	An example of a COSE object is a COSE_Sign1 structure,
+	as described in Section 4.2 of <xref target="RFC9052"/>.
       </t>
 
       <section anchor="rnc" title="Requirements Notation and Conventions">
