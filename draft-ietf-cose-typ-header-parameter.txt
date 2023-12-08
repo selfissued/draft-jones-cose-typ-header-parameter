@@ -83,7 +83,7 @@ Table of Contents
    parameter to COSE so that the benefits of explicit typing can be
    brought to COSE objects.  The syntax of the COSE type header
    parameter value is the same as the existing COSE content type header
-   parameter, allowing both integer CoAP Content-Formats
+   parameter, allowing both unsigned integer CoAP Content-Formats
    [IANA.CoAP.ContentFormats] values and string Media Type
    [IANA.MediaTypes] values to be used.
 
@@ -110,10 +110,10 @@ Table of Contents
 
    The syntax of this header parameter value is the same as the content
    type header parameter defined in Section 3.1 of [RFC9052]; it is
-   either an integer CoAP Content-Formats [IANA.CoAP.ContentFormats]
-   value or a string Content Type value.  Content Type values have a
-   Media Type name [IANA.MediaTypes] and MAY include Media Type
-   parameters.
+   either an unsigned integer CoAP Content-Formats
+   [IANA.CoAP.ContentFormats] value or a string Content Type value.
+   Content Type values have a Media Type name [IANA.MediaTypes] and MAY
+   include Media Type parameters.
 
    The typ parameter MUST NOT be present in unprotected headers.
 
@@ -141,7 +141,7 @@ Table of Contents
    Parameters" registry [IANA.COSE.HeaderParameters].
 
    *  Name: typ (type)
-   *  Label: TBD (requested assignment 14)
+   *  Label: TBD (requested assignment 16)
    *  Value Type: uint / tstr
    *  Value Registry: [IANA.CoAP.ContentFormats] or [IANA.MediaTypes]
    *  Description: Type of the complete COSE object

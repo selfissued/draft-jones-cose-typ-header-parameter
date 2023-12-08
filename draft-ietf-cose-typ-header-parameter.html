@@ -28,13 +28,13 @@
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 3.11.0
+    platformdirs 4.1.0
     pycountry 22.3.5
     PyYAML 6.0
     requests 2.31.0
     setuptools 67.7.2
     six 1.16.0
-    wcwidth 0.2.9
+    wcwidth 0.2.12
 -->
 <link href="draft-ietf-cose-typ-header-parameter.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1194,7 +1194,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
  so that the benefits of explicit typing
  can be brought to COSE objects.
  The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter,
- allowing both integer CoAP Content-Formats <span>[<a href="#IANA.CoAP.ContentFormats" class="cite xref">IANA.CoAP.ContentFormats</a>]</span> values
+ allowing both unsigned integer CoAP Content-Formats <span>[<a href="#IANA.CoAP.ContentFormats" class="cite xref">IANA.CoAP.ContentFormats</a>]</span> values
  and string Media Type <span>[<a href="#IANA.MediaTypes" class="cite xref">IANA.MediaTypes</a>]</span> values to be used.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <div id="rnc">
 <section id="section-1.1">
@@ -1234,7 +1234,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
  The syntax of this header parameter value is the same as the content type header parameter
  defined in Section 3.1 of <span>[<a href="#RFC9052" class="cite xref">RFC9052</a>]</span>;
  it is either
- an integer CoAP Content-Formats <span>[<a href="#IANA.CoAP.ContentFormats" class="cite xref">IANA.CoAP.ContentFormats</a>]</span> value
+ an unsigned integer CoAP Content-Formats <span>[<a href="#IANA.CoAP.ContentFormats" class="cite xref">IANA.CoAP.ContentFormats</a>]</span> value
  or a string Content Type value.
  Content Type values have a Media Type name <span>[<a href="#IANA.MediaTypes" class="cite xref">IANA.MediaTypes</a>]</span>
  and MAY include Media Type parameters.<a href="#section-2-2" class="pilcrow">¶</a></p>
@@ -1280,7 +1280,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
           <li class="compact" id="section-4.1-2.2">
             <p id="section-4.1-2.2.1">
-       Label: TBD (requested assignment 14)<a href="#section-4.1-2.2.1" class="pilcrow">¶</a></p>
+       Label: TBD (requested assignment 16)<a href="#section-4.1-2.2.1" class="pilcrow">¶</a></p>
 </li>
           <li class="compact" id="section-4.1-2.3">
             <p id="section-4.1-2.3.1">
