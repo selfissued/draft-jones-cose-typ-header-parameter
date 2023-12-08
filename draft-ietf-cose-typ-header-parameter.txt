@@ -5,8 +5,8 @@
 COSE Working Group                                            M.B. Jones
 Internet-Draft                                    Self-Issued Consulting
 Intended status: Standards Track                               O. Steele
-Expires: 9 May 2024                                            Transmute
-                                                         6 November 2023
+Expires: 10 June 2024                                          Transmute
+                                                         8 December 2023
 
 
                    COSE "typ" (type) Header Parameter
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 9 May 2024.
+   This Internet-Draft will expire on 10 June 2024.
 
 Copyright Notice
 
