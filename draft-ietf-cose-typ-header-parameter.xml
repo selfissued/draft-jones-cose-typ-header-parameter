@@ -248,8 +248,10 @@
     <section title="Acknowledgements" anchor="Acknowledgements" numbered="no">
       <t>
 	We would like to thank
-	Carsten Bormann
-	for his valuable contributions to this specification.
+        Henk Birkholz,
+	Carsten Bormann,
+	and Marco Tiloca,
+	for their valuable contributions to this specification.
       </t>
     </section>
 
