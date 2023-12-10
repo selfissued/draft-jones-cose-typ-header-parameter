@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-07T01:13:08.051260+00:00",
+  "timestamp": "2023-12-10T01:17:27.170250+00:00",
   "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
   "labels": [
     {
@@ -220,24 +220,26 @@
       "id": "PR_kwDOJ5VX785gKCCw",
       "title": "Address Marco Tiloca's WGLC review comments",
       "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/5",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "OR13",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-11-22T17:38:52Z",
-      "updatedAt": "2023-11-22T17:44:32Z",
+      "updatedAt": "2023-12-08T12:29:10Z",
       "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "baseRefName": "main",
       "baseRefOid": "e8f9f99560f6de810f9482f9070fea3c6c403069",
       "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "headRefName": "comments-from-the-list",
       "headRefOid": "cdf43f90c6d3623b912bf4294e57cf9d54795dac",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-12-08T12:29:10Z",
+      "mergedAt": "2023-12-08T12:29:10Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "725dcf13b95a51b1d7f99907928fb50e3c728635"
+      },
       "comments": [],
       "reviews": [
         {
@@ -260,24 +262,26 @@
       "id": "PR_kwDOJ5VX785gKCps",
       "title": "Update Acknowledgements",
       "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/6",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "OR13",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-11-22T17:40:51Z",
-      "updatedAt": "2023-11-22T17:45:37Z",
+      "updatedAt": "2023-12-08T12:29:31Z",
       "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "baseRefName": "main",
       "baseRefOid": "e8f9f99560f6de810f9482f9070fea3c6c403069",
       "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
       "headRefName": "update-acknowledgements",
-      "headRefOid": "b76c7dd815890341a497f123207776d3f6877d37",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "a11f03f2edc327208c57d02a6b44b7bb94de17b5",
+      "closedAt": "2023-12-08T12:29:30Z",
+      "mergedAt": "2023-12-08T12:29:30Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "c6813d75a21153e1635fac5d89a92530f1217dfb"
+      },
       "comments": [],
       "reviews": [
         {
@@ -291,6 +295,68 @@
           "body": "",
           "createdAt": "2023-11-22T17:45:37Z",
           "updatedAt": "2023-11-22T17:45:37Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOJ5VX785piW8b",
+          "commit": {
+            "abbreviatedOid": "b76c7dd"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-12-07T16:47:54Z",
+          "updatedAt": "2023-12-07T16:47:55Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\n        Henk Birkholz,\r\n\tCarsten Bormann,\r\n```",
+              "createdAt": "2023-12-07T16:47:55Z",
+              "updatedAt": "2023-12-07T16:48:34Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOJ5VX785hcYHy",
+      "title": "Uniformly use term COSE object",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/7",
+      "state": "MERGED",
+      "author": "selfissued",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Applies Henk's terminology suggestions during WGLC.",
+      "createdAt": "2023-12-07T16:46:10Z",
+      "updatedAt": "2023-12-08T12:29:58Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "e8f9f99560f6de810f9482f9070fea3c6c403069",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "mbj-cose-object",
+      "headRefOid": "8248eec40cf80525b3687d31cef0143ca2b03225",
+      "closedAt": "2023-12-08T12:29:57Z",
+      "mergedAt": "2023-12-08T12:29:57Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "d099b3fcca254bd99dfdca2dac90c55e43367928"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785piZVD",
+          "commit": {
+            "abbreviatedOid": "567da3e"
+          },
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-07T16:53:10Z",
+          "updatedAt": "2023-12-07T16:53:10Z",
           "comments": []
         }
       ]
