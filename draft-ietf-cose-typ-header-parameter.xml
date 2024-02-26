@@ -67,7 +67,7 @@
 	it does not define an equivalent of the <spanx style="verb">typ</spanx> (type) header parameter,
 	which is used for declaring the type of the entire JOSE data structure.
 	The security benefits of having <spanx style="verb">typ</spanx> (type) are described in
-	the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
+  Section 3.11 of the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
 	which recommends its use for "explicit typing" --
 	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of JWTs.
       </t>
