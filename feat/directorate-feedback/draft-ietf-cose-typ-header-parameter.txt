@@ -5,8 +5,8 @@
 COSE Working Group                                            M.B. Jones
 Internet-Draft                                    Self-Issued Consulting
 Intended status: Standards Track                               O. Steele
-Expires: 9 May 2024                                            Transmute
-                                                         6 November 2023
+Expires: 10 June 2024                                          Transmute
+                                                         8 December 2023
 
 
                    COSE "typ" (type) Header Parameter
@@ -14,11 +14,13 @@ Expires: 9 May 2024                                            Transmute
 
 Abstract
 
-   This specification adds the equivalent of the JOSE typ (type) header
-   parameter to COSE so that the benefits of explicit typing, as defined
-   in the JSON Web Token Best Current Practices BCP, can be brought to
-   COSE objects.  The syntax of the COSE type header parameter value is
-   the same as the existing COSE content type header parameter.
+   This specification adds the equivalent of the JOSE (Javascript Object
+   Signing and Encryption) typ (type) header parameter to COSE (CBOR
+   Object Signing and Encryption) so that the benefits of explicit
+   typing, as defined in the JSON Web Token Best Current Practices BCP,
+   can be brought to COSE objects.  The syntax of the COSE type header
+   parameter value is the same as the existing COSE content type header
+   parameter.
 
 Status of This Memo
 
@@ -35,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 9 May 2024.
+   This Internet-Draft will expire on 10 June 2024.
 
 Copyright Notice
 
@@ -75,17 +77,22 @@ Table of Contents
    functionality to JOSE is that it does not define an equivalent of the
    typ (type) header parameter, which is used for declaring the type of
    the entire JOSE data structure.  The security benefits of having typ
-   (type) are described in the JSON Web Token Best Current Practices
-   [RFC8725], which recommends its use for "explicit typing" -- using
-   typ values to distinguish between different kinds of objects.
+   (type) are described in Section 3.11 of the JSON Web Token Best
+   Current Practices [RFC8725], which recommends its use for "explicit
+   typing" -- using typ values to distinguish between different kinds of
+   JWTs.
 
    This specification adds the equivalent of the JOSE typ (type) header
    parameter to COSE so that the benefits of explicit typing can be
    brought to COSE objects.  The syntax of the COSE type header
    parameter value is the same as the existing COSE content type header
-   parameter, allowing both integer CoAP Content-Formats
+   parameter, allowing both unsigned integer CoAP Content-Formats
    [IANA.CoAP.ContentFormats] values and string Media Type
    [IANA.MediaTypes] values to be used.
+
+   The term "COSE object" is used in the same manner as in [RFC9052].
+   An example of a COSE object is a COSE_Sign1 structure, as described
+   in Section 4.2 of [RFC9052].
 
 1.1.  Requirements Notation and Conventions
 
@@ -98,22 +105,24 @@ Table of Contents
 2.  COSE "typ" (type) header parameter
 
    The typ (type) header parameter is used by COSE applications to
-   declare the type of this complete COSE object.  This is intended for
-   use by the application when more than one kind of object could be
-   present in an application data structure that can contain a COSE
-   object; the application can use this value to disambiguate among the
-   different kinds of objects that might be present.  It will typically
-   not be used by applications when the kind of object is already known.
-   This parameter is ignored by COSE implementations; any processing of
-   this parameter is performed by the COSE application.  Use of this
-   header parameter is OPTIONAL.
+   declare the type of this complete COSE object.  As compared to the
+   content type header, which declares the type of the COSE object
+   payload.  This is intended for use by the application when more than
+   one kind of COSE object could be present in an application data
+   structure that can contain a COSE object; the application can use
+   this value to disambiguate among the different kinds of COSE objects
+   that might be present.  It will typically not be used by applications
+   when the kind of COSE object is already known.  This parameter is
+   ignored by COSE implementations; any processing of this parameter is
+   performed by the COSE application.  Use of this header parameter is
+   OPTIONAL.
 
    The syntax of this header parameter value is the same as the content
    type header parameter defined in Section 3.1 of [RFC9052]; it is
-   either an integer CoAP Content-Formats [IANA.CoAP.ContentFormats]
-   value or a string Content Type value.  Content Type values have a
-   Media Type name [IANA.MediaTypes] and MAY include Media Type
-   parameters.
+   either an unsigned integer CoAP Content-Formats
+   [IANA.CoAP.ContentFormats] value or a string Content Type value.
+   Content Type values have a Media Type name [IANA.MediaTypes] and MAY
+   include Media Type parameters.
 
    The typ parameter MUST NOT be present in unprotected headers.
 
@@ -124,9 +133,9 @@ Table of Contents
 3.  Security Considerations
 
    The case for explicit typing of COSE objects is equivalent to the
-   case made for explicit typing in JSON Web Token Best Current
-   Practices [RFC8725]; explicit typing can prevent confusion between
-   different kinds of objects.
+   case made for explicit typing in Section 3.11 of JSON Web Token Best
+   Current Practices [RFC8725]: explicit typing can prevent confusion
+   between different kinds of COSE objects.
 
    COSE applications employing explicit typing should reject COSE
    objects with a type header parameter value different than values that
@@ -141,7 +150,7 @@ Table of Contents
    Parameters" registry [IANA.COSE.HeaderParameters].
 
    *  Name: typ (type)
-   *  Label: TBD (requested assignment 14)
+   *  Label: TBD (requested assignment 16)
    *  Value Type: uint / tstr
    *  Value Registry: [IANA.CoAP.ContentFormats] or [IANA.MediaTypes]
    *  Description: Type of the complete COSE object
