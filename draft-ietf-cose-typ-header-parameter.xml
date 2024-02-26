@@ -134,8 +134,8 @@
     <section anchor="Security" title="Security Considerations">
       <t>
 	The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
-	in Section 3.11 of JSON Web Token Best Current Practices <xref target="RFC8725"/>;
-	explicit typing can prevent confusion between different kinds of COSE objects.
+	in Section 3.11 of JSON Web Token Best Current Practices <xref target="RFC8725"/>: 
+  explicit typing can prevent confusion between different kinds of COSE objects.
       </t>
       <t>
 	COSE applications employing explicit typing should reject COSE objects
