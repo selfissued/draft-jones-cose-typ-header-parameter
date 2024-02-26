@@ -1227,7 +1227,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-2-1">
  The <code>typ</code> (type) header parameter
  is used by COSE applications to declare the
- type of this complete COSE object. As compared to the content type header,
+ type of this complete COSE object, as compared to the content type header parameter,
   which declares the type of the COSE object payload.
  This is intended for use by the application when
  more than one kind of COSE object could be present in
@@ -1262,7 +1262,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-3-1">
  The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
  in Section 3.11 of JSON Web Token Best Current Practices <span>[<a href="#RFC8725" class="cite xref">RFC8725</a>]</span>:
-  explicit typing can prevent confusion between different kinds of COSE objects.<a href="#section-3-1" class="pilcrow">¶</a></p>
+  Explicit typing can prevent confusion between different kinds of COSE objects.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <p id="section-3-2">
  COSE applications employing explicit typing should reject COSE objects
  with a type header parameter value different than values that they expect in that application context.
