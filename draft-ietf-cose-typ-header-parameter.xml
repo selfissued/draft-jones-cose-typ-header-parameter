@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="8" month="December" year="2023" />
+    <date day="26" month="February" year="2024" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -234,6 +234,27 @@
       </t>
 
       <t>
+        -03
+        <list style='symbols'>
+          <t>
+	    Addressed GENART and OPSDIR review comments.
+          </t>
+        </list>
+      </t>
+
+      <t>
+        -02
+        <list style='symbols'>
+          <t>
+	    Addressed working group last call comments.
+          </t>
+          <t>
+	    Changed requested assignment from 14 to 16 due to conflict a with new assignment.
+          </t>
+        </list>
+      </t>
+
+      <t>
         -01
         <list style='symbols'>
           <t>
@@ -258,7 +279,10 @@
 	We would like to thank
         Henk Birkholz,
 	Carsten Bormann,
-	and Marco Tiloca,
+	Susan Hares,
+	Marco Tiloca,
+	and
+	Dale Worley
 	for their valuable contributions to this specification.
       </t>
     </section>
