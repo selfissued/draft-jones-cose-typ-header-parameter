@@ -44,7 +44,9 @@
 
     <abstract>
       <t>
-	This specification adds the equivalent of the JOSE <spanx style="verb">typ</spanx> (type) header parameter to COSE
+	This specification adds the equivalent of the JSON Object Signing and Encryption (JOSE)
+  <spanx style="verb">typ</spanx> (type) header parameter to
+  CBOR Object Signing and Encryption (COSE)
 	so that the benefits of explicit typing,
 	as defined in the JSON Web Token Best Current Practices BCP,
 	can be brought to COSE objects.
@@ -65,7 +67,7 @@
 	it does not define an equivalent of the <spanx style="verb">typ</spanx> (type) header parameter,
 	which is used for declaring the type of the entire JOSE data structure.
 	The security benefits of having <spanx style="verb">typ</spanx> (type) are described in
-	the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
+  Section 3.11 of the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
 	which recommends its use for "explicit typing" --
 	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of JWTs.
       </t>
@@ -98,7 +100,8 @@
       <t>
 	The <spanx style="verb">typ</spanx> (type) header parameter
 	is used by COSE applications to declare the
-	type of this complete COSE object.
+	type of this complete COSE object, as compared to the content type header parameter,
+  which declares the type of the COSE object payload.
 	This is intended for use by the application when
 	more than one kind of COSE object could be present in
 	an application data structure that can contain a COSE object;
@@ -131,8 +134,8 @@
     <section anchor="Security" title="Security Considerations">
       <t>
 	The case for explicit typing of COSE objects is equivalent to the case made for explicit typing
-	in JSON Web Token Best Current Practices <xref target="RFC8725"/>;
-	explicit typing can prevent confusion between different kinds of COSE objects.
+	in Section 3.11 of JSON Web Token Best Current Practices <xref target="RFC8725"/>:
+  Explicit typing can prevent confusion between different kinds of COSE objects.
       </t>
       <t>
 	COSE applications employing explicit typing should reject COSE objects
