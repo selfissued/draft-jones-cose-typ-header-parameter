@@ -100,7 +100,7 @@
       <t>
 	The <spanx style="verb">typ</spanx> (type) header parameter
 	is used by COSE applications to declare the
-	type of this complete COSE object. As compared to the content type header,
+	type of this complete COSE object, as compared to the content type header parameter,
   which declares the type of the COSE object payload.
 	This is intended for use by the application when
 	more than one kind of COSE object could be present in
