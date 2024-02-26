@@ -105,17 +105,17 @@ Table of Contents
 2.  COSE "typ" (type) header parameter
 
    The typ (type) header parameter is used by COSE applications to
-   declare the type of this complete COSE object, as compared to the
-   content type header parameter, which declares the type of the COSE
-   object payload.  This is intended for use by the application when
-   more than one kind of COSE object could be present in an application
-   data structure that can contain a COSE object; the application can
-   use this value to disambiguate among the different kinds of COSE
-   objects that might be present.  It will typically not be used by
-   applications when the kind of COSE object is already known.  This
-   parameter is ignored by COSE implementations; any processing of this
-   parameter is performed by the COSE application.  Use of this header
-   parameter is OPTIONAL.
+   declare the type of this complete COSE object.  As compared to the
+   content type header, which declares the type of the COSE object
+   payload.  This is intended for use by the application when more than
+   one kind of COSE object could be present in an application data
+   structure that can contain a COSE object; the application can use
+   this value to disambiguate among the different kinds of COSE objects
+   that might be present.  It will typically not be used by applications
+   when the kind of COSE object is already known.  This parameter is
+   ignored by COSE implementations; any processing of this parameter is
+   performed by the COSE application.  Use of this header parameter is
+   OPTIONAL.
 
    The syntax of this header parameter value is the same as the content
    type header parameter defined in Section 3.1 of [RFC9052]; it is
