@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-25T01:12:02.764001+00:00",
+  "timestamp": "2024-02-27T01:07:05.138028+00:00",
   "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
   "labels": [
     {
@@ -357,6 +357,108 @@
           "body": "",
           "createdAt": "2023-12-07T16:53:10Z",
           "updatedAt": "2023-12-07T16:53:10Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOJ5VX785n8R3v",
+      "title": "Apply directorate feedback",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/8",
+      "state": "MERGED",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "work in progress:\r\n\r\n- [x] - https://datatracker.ietf.org/doc/review-ietf-cose-typ-header-parameter-02-genart-lc-worley-2024-02-18/\r\n- [x] - https://datatracker.ietf.org/doc/review-ietf-cose-typ-header-parameter-02-opsdir-lc-hares-2024-02-18/",
+      "createdAt": "2024-02-26T17:03:45Z",
+      "updatedAt": "2024-02-26T19:02:08Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "4f0542edd8d00dfd87e6d2f78ddfe460939dc95b",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "feat/directorate-feedback",
+      "headRefOid": "bdeebdf4a4c5abbc243ad761631294d586984c98",
+      "closedAt": "2024-02-26T19:02:08Z",
+      "mergedAt": "2024-02-26T19:02:07Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "5353c9f866a3c4418617cfd66fe09202fdb8acdf"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785xWEyf",
+          "commit": {
+            "abbreviatedOid": "a266298"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-26T17:46:03Z",
+          "updatedAt": "2024-02-26T17:46:03Z",
+          "comments": [
+            {
+              "originalPosition": 7,
+              "body": "```suggestion\r\n\tThis specification adds the equivalent of the JSON Object Signing and Encryption (JOSE)\r\n  <spanx style=\"verb\">typ</spanx> (type) header parameter to\r\n  CBOR Object Signing and Encryption (COSE)\r\n```",
+              "createdAt": "2024-02-26T17:46:03Z",
+              "updatedAt": "2024-02-26T17:46:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJ5VX785xWFr_",
+          "commit": {
+            "abbreviatedOid": "a266298"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-26T17:48:03Z",
+          "updatedAt": "2024-02-26T17:48:03Z",
+          "comments": [
+            {
+              "originalPosition": 25,
+              "body": "```suggestion\r\n\ttype of this complete COSE object, as compared to the content type header parameter,\r\n```",
+              "createdAt": "2024-02-26T17:48:03Z",
+              "updatedAt": "2024-02-26T17:48:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJ5VX785xWGWt",
+          "commit": {
+            "abbreviatedOid": "a266298"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-26T17:49:01Z",
+          "updatedAt": "2024-02-26T17:49:01Z",
+          "comments": [
+            {
+              "originalPosition": 37,
+              "body": "```suggestion\r\n  Explicit typing can prevent confusion between different kinds of COSE objects.\r\n```",
+              "createdAt": "2024-02-26T17:49:01Z",
+              "updatedAt": "2024-02-26T17:49:01Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJ5VX785xWgJP",
+          "commit": {
+            "abbreviatedOid": "bdeebdf"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-02-26T18:45:48Z",
+          "updatedAt": "2024-02-26T18:45:48Z",
           "comments": []
         }
       ]
