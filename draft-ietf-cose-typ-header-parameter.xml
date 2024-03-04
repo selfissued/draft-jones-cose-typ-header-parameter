@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="26" month="February" year="2024" />
+    <date day="4" month="March" year="2024" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -109,8 +109,6 @@
 	the different kinds of COSE objects that might be present.
 	It will typically not be used by applications when
 	the kind of COSE object is already known.
-	This parameter is ignored by COSE implementations;
-	any processing of this parameter is performed by the COSE application.
 	Use of this header parameter is OPTIONAL.
       </t>
       <t>
@@ -121,6 +119,15 @@
 	or a string Content Type value.
 	Content Type values have a Media Type name <xref target="IANA.MediaTypes"/>
 	and MAY include Media Type parameters.
+      </t>
+      <t>
+	This parameter is ignored by COSE implementations
+	(libraries implementing <xref target="RFC9052"/> and this specification),
+	other than being passed through to applications using those implementations.
+	Any processing of this parameter is performed by the COSE application
+	using application-specific processing rules.
+	For instance, an application might verify that the <spanx style="verb">typ</spanx> value
+	is a particular application-chosen media type and reject the data structure if it is not.
       </t>
       <t>
   The <spanx style="verb">typ</spanx> parameter MUST NOT be present in unprotected headers.
@@ -234,6 +241,15 @@
       </t>
 
       <t>
+        -04
+        <list style='symbols'>
+          <t>
+	    Addressed SECDIR review comments.
+          </t>
+        </list>
+      </t>
+
+      <t>
         -03
         <list style='symbols'>
           <t>
@@ -280,6 +296,7 @@
         Henk Birkholz,
 	Carsten Bormann,
 	Susan Hares,
+	Dan Harkins,
 	Marco Tiloca,
 	and
 	Dale Worley
