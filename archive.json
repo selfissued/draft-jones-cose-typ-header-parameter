@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-03-03T01:11:11.376713+00:00",
+  "timestamp": "2024-03-05T01:07:22.441567+00:00",
   "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
   "labels": [
     {
@@ -459,6 +459,48 @@
           "body": "",
           "createdAt": "2024-02-26T18:45:48Z",
           "updatedAt": "2024-02-26T18:45:48Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOJ5VX785oi4wE",
+      "title": "Address SECDIR review comments",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/9",
+      "state": "MERGED",
+      "author": "selfissued",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Address SECDIR review comments by Dan Harkins on what it means for an implementation to ignore the header parameter.",
+      "createdAt": "2024-03-04T06:04:09Z",
+      "updatedAt": "2024-03-04T17:29:24Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "e5ff783ba0c5e4b59b1c137d119c6dd700b0e3ea",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "mbj-secdir-comments",
+      "headRefOid": "d0057b9f0884221406a9a149e753d78d2dcf5270",
+      "closedAt": "2024-03-04T17:29:23Z",
+      "mergedAt": "2024-03-04T17:29:23Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "c9119115992e8c36d14955538f8c6f5f99472d45"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX785yG4Lx",
+          "commit": {
+            "abbreviatedOid": "d0057b9"
+          },
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-03-04T14:05:52Z",
+          "updatedAt": "2024-03-04T14:05:52Z",
           "comments": []
         }
       ]
