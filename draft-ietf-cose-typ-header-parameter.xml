@@ -34,7 +34,7 @@
       </address>
     </author>
 
-    <date day="4" month="March" year="2024" />
+    <date day="3" month="April" year="2024" />
 
     <area>Security</area>
     <workgroup>COSE Working Group</workgroup>
@@ -46,10 +46,10 @@
       <t>
 	This specification adds the equivalent of the JSON Object Signing and Encryption (JOSE)
   <spanx style="verb">typ</spanx> (type) header parameter to
-  CBOR Object Signing and Encryption (COSE)
-	so that the benefits of explicit typing,
+	CBOR Object Signing and Encryption (COSE).
+	This enables the benefits of explicit typing,
 	as defined in the JSON Web Token Best Current Practices BCP,
-	can be brought to COSE objects.
+	to be brought to COSE objects.
 	The syntax of the COSE type header parameter value is the same as the existing COSE content type header parameter.
       </t>
     </abstract>
@@ -69,7 +69,8 @@
 	The security benefits of having <spanx style="verb">typ</spanx> (type) are described in
   Section 3.11 of the JSON Web Token Best Current Practices <xref target="RFC8725"/>,
 	which recommends its use for "explicit typing" --
-	using <spanx style="verb">typ</spanx> values to distinguish between different kinds of JWTs.
+	using <spanx style="verb">typ</spanx> values to distinguish between
+	different kinds of JSON Web Tokens (JWTs) <xref target="RFC7519"/>.
       </t>
       <t>
 	This specification adds the equivalent of the JOSE <spanx style="verb">typ</spanx> (type) header parameter to COSE
@@ -80,7 +81,7 @@
 	and string Media Type <xref target="IANA.MediaTypes"/> values to be used.
       </t>
       <t>
-	The term "COSE object" is used in the same manner as in <xref target="RFC9052"/>.
+	The term "COSE object" is used as defined in <xref target="RFC9052"/>.
 	An example of a COSE object is a COSE_Sign1 structure,
 	as described in Section 4.2 of <xref target="RFC9052"/>.
       </t>
@@ -193,8 +194,6 @@
     <references title="Normative References">
 
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
-      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7515.xml"/>
-      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7516.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8174.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8725.xml"/>
       <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9052.xml"/>
@@ -203,6 +202,8 @@
 
     <references title="Informative References">
 
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7515.xml"/>
+      <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7516.xml"/>
       <reference anchor="IANA.COSE.HeaderParameters" target="https://www.iana.org/assignments/cose/cose.xhtml#header-parameters">
         <front>
           <title>COSE Header Parameters</title>
@@ -238,6 +239,15 @@
     <section title="Document History" anchor="History">
       <t>
         [[ to be removed by the RFC Editor before publication as an RFC ]]
+      </t>
+
+      <t>
+        -05
+        <list style='symbols'>
+          <t>
+	    Addressed Area Director review comments.
+          </t>
+        </list>
       </t>
 
       <t>
@@ -297,7 +307,10 @@
 	Carsten Bormann,
 	Susan Hares,
 	Dan Harkins,
+	Murray Kucherawy,
 	Marco Tiloca,
+	Gunter Van de Velde,
+	Éric Vyncke,
 	and
 	Dale Worley
 	for their valuable contributions to this specification.
