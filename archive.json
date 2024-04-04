@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-02T01:12:39.076421+00:00",
+  "timestamp": "2024-04-04T01:10:09.782073+00:00",
   "repo": "selfissued/draft-ietf-cose-typ-header-parameter",
   "labels": [
     {
@@ -501,6 +501,48 @@
           "body": "",
           "createdAt": "2024-03-04T14:05:52Z",
           "updatedAt": "2024-03-04T14:05:52Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOJ5VX785rgro5",
+      "title": "Addressed Area Director review comments",
+      "url": "https://github.com/selfissued/draft-ietf-cose-typ-header-parameter/pull/10",
+      "state": "MERGED",
+      "author": "selfissued",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-04-03T04:43:03Z",
+      "updatedAt": "2024-04-03T22:22:14Z",
+      "baseRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "baseRefName": "main",
+      "baseRefOid": "c9119115992e8c36d14955538f8c6f5f99472d45",
+      "headRepository": "selfissued/draft-ietf-cose-typ-header-parameter",
+      "headRefName": "mbj-ad-reviews",
+      "headRefOid": "930b7a5c034f2bba07828f652d621fc68ce09464",
+      "closedAt": "2024-04-03T22:22:14Z",
+      "mergedAt": "2024-04-03T22:22:13Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "d508ecf2db4a8a6b25e53395640c3f803507f63a"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOJ5VX78511B-l",
+          "commit": {
+            "abbreviatedOid": "930b7a5"
+          },
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-03T13:33:22Z",
+          "updatedAt": "2024-04-03T13:33:22Z",
           "comments": []
         }
       ]
